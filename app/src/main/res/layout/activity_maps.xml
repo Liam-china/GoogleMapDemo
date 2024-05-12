@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <ImageView
+        android:id="@+id/iv_target"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_31"
+        android:layout_marginBottom="@dimen/dp_10_5"
+        android:layout_gravity="center"
+        android:src="@mipmap/target"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/start"
+            />
+
+        <TextView
+            android:id="@+id/tv_distance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</FrameLayout>
